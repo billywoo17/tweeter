@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
 
   $("#inputTweet").on('input', function() {
     let letterCount = $(".counter");
