@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <!-- Import Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+    <!-- Import Icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/show-tweet.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-   <!-- External JS For counter -->
+    <!-- External JS For counter -->
     <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -34,26 +38,30 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
 
-<section class="new-tweet">
-  <h2>Compose Tweet</h2>
-  <form id= "myTweet" method="POST" action ="/tweets">
-    <textarea id= "inputTweet" name="text" placeholder="What are you humming about?"></textarea>
-    <input type="submit" value="Tweet">
-    <span class="counter">140</span>
-  </form>
-</section>
-<section id="displayTweets">
-    <article>
-    <header>
-        <h1>My header 12345 hello now</h1>
-        <h2>My handle</h2>
-    </header>
-    <h3>MY AWESOME Tweets</h3>
-    <footer>
-      <h4>my footer. how COOL</ h4>
-    </footer>
-  </article>
-</section>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id= "myTweet" method="POST" action ="/tweets">
+          <textarea id= "inputTweet" name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section class="displayTweets" id="tweets-container">
+        <article>
+          <header>
+              <img src="/images/blue.png">
+              <h1>Bill Fields</h1>
+              <h2>@My handle</h2>
+          </header>
+          <h3>Little Tweet Here</h3>
+          <footer>
+            <h4>10 days ago</h4>
+            <i class="fas fa-retweet" id="retweet"></i>
+            <i class="fas fa-heart" id="heart"></i>
+            <i class="fab fa-font-awesome-flag" id="flag"></i>
+          </footer>
+        </article>
+      </section>
     </main>
 
   </body>
