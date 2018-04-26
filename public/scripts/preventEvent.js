@@ -16,7 +16,7 @@ $(function() {
         success:
           loadTweets
       });
-      $("inputTweet").value = "";
+      $("#inputTweet").val("");
     }
   });
 });

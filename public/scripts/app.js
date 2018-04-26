@@ -26,7 +26,7 @@ function createTweetElement(data){
 }
 function renderTweets(myObj) {
   $('#tweets-container').empty()
-  myObj.slice().reverse().forEach(function(objKey) {
+  myObj.reverse().forEach(function(objKey) {
   var $tweet = createTweetElement(objKey);
   $('#tweets-container').append($tweet);
   });

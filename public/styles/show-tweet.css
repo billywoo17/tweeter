@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   padding-left: 10px;
+  overflow-wrap: break-word;
 }
 
 .container .displayTweets article h4{
