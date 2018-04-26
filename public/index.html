@@ -26,6 +26,8 @@
     <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- Prevent Event JS -->
+    <script type="text/javascript" src="/scripts/preventEvent.js"></script>
   </head>
 
   <body>
@@ -35,6 +37,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <input type="submit" id="compose" value="compose"></input>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -43,29 +46,13 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form id= "myTweet" method="POST" action ="/tweets">
-          <textarea id= "inputTweet" name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <textarea id= "inputTweet" name="text" placeholder="What are you humming about?" value= ""></textarea>
+          <input id="submitButton" type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
       <section class="displayTweets" id="tweets-container">
-        <article>
-          <header>
-              <img src="/images/blue.png">
-              <h1>Bill Wu</h1>
-              <h2>@BillWuLighthouse</h2>
-          </header>
-          <h3>CSS can be kind of hard</h3>
-          <footer>
-            <h4>10 days ago</h4>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-flag"></i>
-          </footer>
-        </article>
-
       </section>
     </main>
-
   </body>
 </html>
