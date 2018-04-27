@@ -1,3 +1,4 @@
+//toggle function for my textarea via compose button
 $(function() {
   $("#compose").on("click", function(){
     $(".new-tweet").slideToggle( "normal", function() {

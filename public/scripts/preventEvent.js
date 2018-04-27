@@ -1,4 +1,4 @@
-
+//errors and inputs
 $(function() {
    $("#submitButton").on("click", function(event){
     event.preventDefault();
@@ -20,5 +20,3 @@ $(function() {
     }
   });
 });
-
-

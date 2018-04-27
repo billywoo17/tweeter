@@ -1,3 +1,4 @@
+//character count for my textarea
 $(function() {
 
   $("#inputTweet").on('input', function() {
