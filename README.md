@@ -3,7 +3,8 @@
 Tweeter is a simple, single-page Twitter clone.
 
 ##Final Product
-
+!["Screenshot of Front Page"](https://github.com/billywoo17/tweeter/blob/master/screenshot/frontpage.png)
+!["Screenshot of Different Time"](https://github.com/billywoo17/tweeter/blob/master/screenshot/DifferentTime.png)
 
 ## Dependencies
 
