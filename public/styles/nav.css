@@ -38,7 +38,6 @@
   border-radius:5px;
   font-size:1.3em;
   user-select: none;
-
 }
 
 #nav-bar #compose #fa-edit{
@@ -51,5 +50,4 @@
   color: black;
   cursor: pointer;
   user-select: none;
-
 }
